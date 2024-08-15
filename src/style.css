@@ -81,7 +81,6 @@ button:focus-visible {
   text-align: center;
   color: #F44336;
   padding: 0.3rem 1rem;
-  margin: 0 1rem;
 }
 
 .glass {
@@ -89,7 +88,6 @@ button:focus-visible {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(34, 44, 63, 0.169);
-  border-radius: 5px;
   border: 1px solid rgba(0, 91, 65, 0.125);
 }
 
