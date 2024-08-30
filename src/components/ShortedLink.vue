@@ -1,7 +1,7 @@
 <template>
     <div class="url-shortener__response glass">
-        <span>{{ shortenedUrl }}</span>
-        <button @click="copyToClipboard(shortenedUrl)" @mouseleave="clipboardMessage = 'Copy to clipboard.'"
+        <span>{{ shortedUrl }}</span>
+        <button @click="copyToClipboard(shortedUrl)" @mouseleave="clipboardMessage = 'Copy to clipboard.'"
             class="url-shortener__response__copy">
             <span v-text="clipboardMessage" class="tooltip"></span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height: 22px;">
@@ -15,7 +15,7 @@
 <script lang="ts" setup>
 import { ref } from "vue"
 
-defineProps<{ shortenedUrl: string }>()
+defineProps<{ shortedUrl: string }>()
 
 const clipboardMessage = ref("Copy to clipboard.")
 
